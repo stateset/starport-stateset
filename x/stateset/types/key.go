@@ -22,3 +22,23 @@ const (
 	UserPrefix = "user-"
 )
 		
+const (
+	ProposalPrefix = "proposal-"
+)
+		
+const (
+	AgreementPrefix = "agreement-"
+)
+		
+const (
+	PurchaseorderPrefix = "purchaseorder-"
+)
+		
+const (
+	InvoicePrefix = "invoice-"
+)
+		
+const (
+	ContactPrefix = "contact-"
+)
+		

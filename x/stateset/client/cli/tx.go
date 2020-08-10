@@ -23,6 +23,11 @@ func GetTxCmd(cdc *codec.Codec) *cobra.Command {
 
 	statesetTxCmd.AddCommand(flags.PostCommands(
     // this line is used by starport scaffolding
+		GetCmdCreateContact(cdc),
+		GetCmdCreateInvoice(cdc),
+		GetCmdCreatePurchaseorder(cdc),
+		GetCmdCreateAgreement(cdc),
+		GetCmdCreateProposal(cdc),
 		GetCmdCreateUser(cdc),
 		GetCmdCreateNumber(cdc),
 	)...)
