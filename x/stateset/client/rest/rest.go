@@ -9,6 +9,10 @@ import (
 // RegisterRoutes registers stateset-related REST handlers to a router
 func RegisterRoutes(cliCtx context.CLIContext, r *mux.Router) {
   // this line is used by starport scaffolding
+	r.HandleFunc("/stateset/case", listCaseHandler(cliCtx, "stateset")).Methods("GET")
+	r.HandleFunc("/stateset/case", createCaseHandler(cliCtx)).Methods("POST")
+	r.HandleFunc("/stateset/loan", listLoanHandler(cliCtx, "stateset")).Methods("GET")
+	r.HandleFunc("/stateset/loan", createLoanHandler(cliCtx)).Methods("POST")
 	r.HandleFunc("/stateset/contact", listContactHandler(cliCtx, "stateset")).Methods("GET")
 	r.HandleFunc("/stateset/contact", createContactHandler(cliCtx)).Methods("POST")
 	r.HandleFunc("/stateset/invoice", listInvoiceHandler(cliCtx, "stateset")).Methods("GET")

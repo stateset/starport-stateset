@@ -42,3 +42,11 @@ const (
 	ContactPrefix = "contact-"
 )
 		
+const (
+	LoanPrefix = "loan-"
+)
+		
+const (
+	CasePrefix = "case-"
+)
+		

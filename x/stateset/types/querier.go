@@ -15,3 +15,7 @@ const (QueryListInvoice = "list-invoice")
 		
 const (QueryListContact = "list-contact")
 		
+const (QueryListLoan = "list-loan")
+		
+const (QueryListCase = "list-case")
+		
